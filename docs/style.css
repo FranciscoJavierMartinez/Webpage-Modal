@@ -99,26 +99,26 @@ p {
 }
 
 footer {
-  height: auto;
-  background-color: #191919;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  /* Nueva Etiqueta en el Pie de Pagina */
+  background-color: #191919; /*  Color de Fondo */
+  color: white; /* La tipografia de las letras es blanca */
+  position: absolute; /* Esta en la posicion absoluta de la pagina, justo debajo del body */
+  bottom: 0; /* Es el espaciado hacia abajo del footer */
+  width: 100%; /* La anchura del elemento */
+  text-align: center; /* Para centar el texto en el footer */
+  padding: 1.5vh; /* Espaciado en el footer */
+  line-height: 3vh; /* Espacio de cada linea */
 }
 
-.container {
-  margin: auto;
-  min-width: 100%;
-  text-align: center;
-  padding: 1vh;
+.social {
+  /* Estilos personalizados a esta clase */
+  display: inline-block; /* Que se comporten en bloque de linea */
+  font-size: 3.5rem; /* Tamaño de cada elemento */
+  padding: 1.1rem 1.1rem; /* Separacion de los iconos sociables */
 }
 
-.end {
-  line-height: 3vh;
-}
-
-.social-icon {
-  font-size: 3.5rem;
-  margin: 1rem 1rem;
+.social:hover {
+  /* Al pasarle el mouse por los iconos sociales */
+  filter: saturate(100%) brightness(150%); /* Saturarlos y aumenta el brillo */
+  transition-duration: 1.5s; /* Duracion de la transicion */
 }
